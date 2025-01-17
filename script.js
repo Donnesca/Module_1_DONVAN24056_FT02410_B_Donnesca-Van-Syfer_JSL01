@@ -5,20 +5,12 @@ function validateSyntax() {
 
   // TODO: Write your validation logic here
   // Check if input starfunctionts with 'pet_' and followed by alphanumeric characters
-  //let resultText = { pet_2015Forrest };
   const regex = /pet_[A-za-z\d]/;
   if (regex.test(input)) {
-    result = "Valid Syntax";
+    result = "Valid Syntax \uD83D\uDFE2"; //Green Circle Emoji
   } else {
-    result = "Invalid Syntax";
+    result = "Invalid Syntax \uD83D\uDD34"; //Red Circle Emoji
   }
-  /*const regex = /^pet_[2015Forrest]/;
 
-  if (regex.test(input)) {
-    result = "Valid Syntax";
-  } else {
-    result = "invalid Syntax";
-  }
-*/
   document.getElementById("result").innerText = result;
 }
